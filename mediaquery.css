@@ -1,0 +1,181 @@
+
+/*<------------------------ setnav and logoset ------------------->*/
+@media (min-width:1025px) and (max-width:3000px) {
+    .setnav {
+        margin-left: 350px;
+    }
+    .logoset {
+        position: relative;
+        left: 70px;
+    }
+}
+
+
+/*<------------------------ setnav ------------------->*/
+@media (min-width:1000px) and (max-width:1024px) {
+    .setnav {
+        margin-left: 100px;
+    }
+}
+
+
+
+/*<------------------------ show, pageswidth and pageswidth2 ------------------->*/
+@media (min-width:320px) and (max-width:1023px) {
+    #show {
+        display: none;
+    }
+    #pageswidth {
+        width: 60px;
+    }
+    #pageswidth2 {
+        width: 60px !important;
+    }
+}
+
+@media (min-width:1024px) and (max-width:3000px) {
+    #nonepagesmenu {
+        display: none;
+    }
+
+    #logoset {
+        position: relative;
+        left: 70px;
+    }
+
+    #marginset {
+        margin-top: -120px !important;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+
+    #marginset {
+        margin-top: 50px !important;
+    }
+}
+
+
+
+/* bannertext set */
+
+@media (min-width:768px) and (max-width:1023px) {
+    .bannerheading {
+        font-size: 65px;
+    }
+    
+    .bannerheading2 {
+        font-size: 12px;
+    }
+    #bannertextimg1 {
+        top: 170px;
+    }
+    
+       #bannertextimg2 {
+           top: 198px;
+           left: 40px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .bannerheading {
+        font-size: 75px;
+    }
+    
+    .bannerheading2 {
+        font-size: 15px;
+    }
+    #bannertextimg1 {
+        top: 280px;
+    }
+    
+       #bannertextimg2 {
+           top: 288px;
+           left: 40px;
+    }
+}
+
+
+@media (min-width:375px) and (max-width:767px) {
+    .bannerheading {
+        font-size: 25px;
+        font-family: sans-serif ;
+        font-weight: lighter !important;
+        text-shadow: 0px 0px 2px black !important;
+        color: rgb(253, 252, 252);
+    }
+    
+    .bannerheading2 {
+        font-size: 10px;
+        font-family: sans-serif !important;
+        width: 200px;
+        margin-left: 90px;
+        color: rgb(201, 191, 191);
+        text-shadow: none !important;
+        font-weight: 700 !important;
+    }
+    #bannertextimg1 {
+        top: 50px;
+    }
+       #bannertextimg2 {
+           top: 50px;
+           left: 5px;
+    }
+}
+
+@media (min-width:320px) and (max-width:374px) {
+    .bannerheading {
+        font-size: 18px;
+        font-family: sans-serif ;
+        font-weight: lighter !important;
+        text-shadow: 0px 0px 2px black !important;
+        color: rgb(253, 252, 252);
+    }
+    
+    .bannerheading2 {
+        font-size: 7px;
+        font-family: sans-serif !important;
+        width: 150px;
+        margin-left: 70px;
+        color: rgb(201, 191, 191);
+        text-shadow: none !important;
+        font-weight: 700 !important;
+        margin-top: -2px;
+    }
+    #bannertextimg1 {
+        top: 50px;
+    }
+       #bannertextimg2 {
+           top: 50px;
+           left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

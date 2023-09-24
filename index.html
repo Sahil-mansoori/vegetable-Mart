@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OGANI</title>
+
+  <!-- Custom css link -->
+  <link rel="stylesheet" href="vegitable.css">
+
+  <!-- Bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- boxicons link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- seconds custom css link -->
+  <link rel="stylesheet" href="mediaquery.css">
+
+  <!-- animation aso link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <header style="position: fixed; width: 100%; z-index: 9999; top: 0px;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logoset" src="/images/logo.png.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 setnav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+            </li>
+
+            <li class="nav-item " id="show">
+              <a class="nav-link active" aria-current="page" href="#">PAGES</a>
+
+              <ul class="hide">
+                <li><a href="">Shoping Details</a></li>
+                <li><a href="">Shoping Cart</a></li>
+                <li><a href="">Check out</a></li>
+                <li><a href="">Blog Details</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown" id="nonepagesmenu">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                PAGES
+              </a>
+              <ul class="dropdown-menu categories" id="pageswidth" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Shoping Details</a></li>
+                <li><a class="dropdown-item" href="#">Shoping Cart</a></li>
+                <li><a class="dropdown-item" href="#">Check out</a></li>
+                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                CATEGORIES
+              </a>
+              <ul class="dropdown-menu categories" id="pageswidth2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fresh Vegitable</a></li>
+                <li><a class="dropdown-item" href="#">Ocean Foods</a></li>
+                <li><a class="dropdown-item" href="#">Fresh Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Butter & Eggs</a></li>
+                <li><a class="dropdown-item" href="#">Fresh Meat</a></li>
+                <li><a class="dropdown-item" href="#">Fastfood</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="button">Search</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!--================================================== BANNER ===============================================-->
+
+  <section class="banner">
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper" id="marginset" style=" border: 1px solid red;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="position: relative !important; display: flex;
+        justify-content: center; align-items: center;">
+          <img src="images/banner01.jpg" style="width:100%;  height: 20% !important; transition: 5s !important;" alt="">
+          <div class="container" id="bannertextimg1">
+            <h1 class="bannerheading" data-aos="zoom-in">WE SERVE FRESH VEGETABLES & FRUITS</h1>
+            <h5 class="bannerheading2">WE DELIVER ORAGANIC VEGETABLES & FRUITS</h5>
+            <button style="width: 100px; height: 35px;
+            border-radius: 20px; border: none; color: green; margin-top: 20px;">view more</button>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="images/banner02.jpg" style="width:100%; height: 20% !important; transition: 5s !important;" alt="">
+          <div class="container" id="bannertextimg2">
+            <h1 class="bannerheading" >100% FRESH & ORGANIC FOOD</h1>
+            <h5 class="bannerheading2">WE DELIVER ORAGANIC VEGETABLES & FRUITS</h5>
+            <button style="width: 100px; height: 35px;margin-top: 20px;
+            border-radius: 20px; border: none; color: green;">view more</button>
+          </div>
+        </div>
+        <!-- <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+     -->
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!--================================================== icons ===============================================-->
+
+  <section style=" margin-top: 50px; margin-bottom: 50px;">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-in"
+          style="display: flex; flex-direction: column; justify-content: center;align-items: center;">
+          <div class="truckicon"> <i class='bx bxs-truck customicon'></i></div>
+          <h6 style="margin-top: 10px; letter-spacing: 1px; font-size: 17px; color: black; text-align: center;">FREE
+            SHIPPING</h6>
+          <p style="font-size: 14px; color: rgb(119, 119, 119); text-align: center;">ON ORDER OVER $100</p>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-in"
+          style="display: flex; flex-direction: column; justify-content: center;align-items: center;">
+          <div class="truckicon2"><i class='bx bx-shopping-bag customicon'></i></div>
+          <h6 style="margin-top: 10px; letter-spacing: 1px; font-size: 17px; color: black; text-align: center;">ALWAYS
+            FRESH</h6>
+          <p style="font-size: 14px; color: rgb(119, 119, 119); text-align: center;">PRODUCT WELL PACKAGE</p>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-in"
+          style="display: flex; flex-direction: column; justify-content: center;align-items: center;">
+          <div class="truckicon3"><i class='bx bx-star customicon'></i></div>
+          <h6 style="margin-top: 10px; letter-spacing: 1px; font-size: 17px; color: black; text-align: center;">SUPERIOR
+            QUALITY</h6>
+          <p style="font-size: 14px; color: rgb(119, 119, 119); text-align: center;">QUALITY PRODUCTS</p>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-in"
+          style="display: flex; flex-direction: column; justify-content: center;align-items: center;">
+          <div class="truckicon4"><i class='bx bx-support customicon'></i></div>
+          <h6 style="margin-top: 10px; letter-spacing: 1px; font-size: 17px; color: black; text-align: center;">SUPPORT
+          </h6>
+          <p style="font-size: 14px; color: rgb(119, 119, 119); text-align: center;">24/7 SUPPORT</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--================================================== vegetables=============================================-->
+
+  <section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="text-align: center; color: green;letter-spacing: 1px;">
+          <h2>Vegetables</h2>
+          <p style="color: rgb(124, 124, 124);">Protect the health of every home</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style=" margin-bottom: 15px;">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"> <img src="images/banner01.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"><img src="images/vege4.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"> <img src="images/vege3.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+      </div>
+    </div>
+
+    <!-- second vegitablebox -->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"> <img src="images/vege3.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"><img src="images/vege5.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"> <img src="images/banner02.jpg"
+            style="width: 100%; height: 100%; padding: 7px 0px;" alt=""></div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--================================================== OUT PRODUCT =============================================-->
+
+  <section>
+
+    <!-- HEADING -->
+    <div class="container" style="margin-top: 80px;">
+      <div class="row">
+        <div class="col-12" style="text-align: center; color: green;letter-spacing: 1px;">
+          <h6>Featured Products</h6>
+          <h2 style="color: black; font-size: 50px; font-weight: bolder;" data-aos="zoom-in">Our Products</h2>
+          <p style="color: rgb(124, 124, 124);">Far far away, behind the word mountains, far from the countries Vokalia
+            and Consonantia</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOXESS -->
+
+    <div class="container" style="margin-bottom: 50px; margin-top: 20px;  padding:10px">
+      <div class="swiper pk">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-2.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">STRAWBERRY</h6>
+              <p style="text-align: center; "><s style="color: rgb(139, 137, 137);">$120.00</s> &emsp; <span
+                  style="color: rgb(39, 163, 39);">$80.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-3.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">GREEN BEANS</h6>
+              <p style="text-align: center; "> <span style="color: rgb(39, 163, 39);">$40.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-4.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">PURPLE CABBAGE</h6>
+              <p style="text-align: center; "><span style="color: rgb(39, 163, 39);">$80.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-5.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">TOMATO</h6>
+              <p style="text-align: center; "> <span style="color: rgb(39, 163, 39);">$150.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-6.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">BROCOLLI</h6>
+              <p style="text-align: center; "> <span style="color: rgb(39, 163, 39);">$80.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-7.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">CARROTS</h6>
+              <p style="text-align: center; "><s style="color: rgb(139, 137, 137);">$80.00</s> &emsp; <span
+                  style="color: rgb(39, 163, 39);">$30.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-4.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">PURPLE CABBAGE</h6>
+              <p style="text-align: center; "><span style="color: rgb(39, 163, 39);">$80.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-2.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">STRAWBERRY</h6>
+              <p style="text-align: center; "><s style="color: rgb(139, 137, 137);">$120.00</s> &emsp; <span
+                  style="color: rgb(39, 163, 39);">$80.00</span></p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img_box" style="border: 1px solid rgb(116, 116, 117);">
+              <img src="images/product-8.jpg" style="width: 100%; height: 80%;" alt="">
+              <h6 style="text-align: center; font-size: 13px;">FRUIT JUICE</h6>
+              <p style="text-align: center; "><s style="color: rgb(139, 137, 137);">$120.00</s> &emsp; <span
+                  style="color: rgb(39, 163, 39);">$50.00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12"  data-aos="zoom-in"><img src="images/product 12.webp" width="100%"
+            style="padding-bottom: 10px;" alt="" ></div>
+        <div class="col-lg-6 col-md-6 col-sm-12"  data-aos="zoom-in"><img src="images/product 13.webp" width="100%"
+            style="padding-bottom: 10px;" alt=""></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--======================================== OUR SATISFIED CUSTOMER SAYS =======================================-->
+
+    <section>
+
+      <!-- HEADING -->
+      <div class="container" style="margin-top: 80px;">
+        <div class="row">
+          <div class="col-12" style="text-align: center; color: green;letter-spacing: 1px;">
+            <h5>Testimony</h5>
+            <h6 style="color: black; font-size: 40px; font-weight: bolder;"  data-aos="flip-right">Our satisfied customer says</h6>
+            <p style="color: rgb(124, 124, 124); font-size: 16px;">Far far away, behind the word mountains, far from the
+              countries
+              Vokalia and Consonantia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOXESS -->
+
+      <div class="container" style="margin-bottom: 50px; margin-top: 20px;  padding:10px">
+        <div class="swiper rk" style="padding-bottom: 80px;">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_1.jpg" style="width: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_2.jpg" style="width: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_3.jpg" style="width: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_4.jpg" style="width: 100%;height: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_6.jpg" style="width: 100%;height: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_5.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box" id="review">
+                <div class="circlesetimg"><img src="images/person_1.jpg" style="width: 100%; " alt=""></div>
+                <p class="reviewpara">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. </p>
+                <h5 style="margin-bottom: 10px;">Genermy benthom</h5>
+                <h6 style="color: rgb(57, 54, 54);margin-bottom: 20px;">Graphic Designer</h6>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+  <!--======================================== Footer =======================================-->
+
+<section style="background-color: rgb(248, 231, 211); padding: 50px 0px;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <img src="images/logo.png.webp" width="40%" alt="">
+        <h6 style="margin-top: 30px;">Address: 60-49 Road 11378 New York</h6>
+        <h6 style="margin-top: 15px;">Phone: +65 11.188.888</h6>
+        <h6 style="margin-top: 15px;">Email: hello@colorlib.com</h6>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="display: flex; justify-content: start;
+      align-items: center;
+      flex-direction: column;">
+        <h5>Menu</h5>
+        <ul class="footermenu" >
+          <li><a href="">About</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Journal</a></li>
+          <li><a href="">Contact us</a></li>
+
+        </ul>
+
+      </div>
+
+
+
+
+      <div class="col-lg-3 col-md-6 col-sm-12" style="display: flex; justify-content: start;
+      align-items: center;
+      flex-direction: column;">
+        <h5>Help</h5>
+        <ul class="footermenu" >
+          <li><a href="">Shipping information</a></li>
+          <li><a href="">Return & Exchange</a></li>
+          <li><a href="">Term & Condition</a></li>
+          <li><a href="">Privay Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12" style="display: flex; justify-content: start;
+      align-items: center;
+      flex-direction: column;">
+        <h5>Information about us</h5>
+        <ul class="footermenu" >
+          <li><a href="">Who We Are</a></li>
+          <li><a href="">Our Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+
+<!-- Bootstrap js link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!--============== banner js ================ -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    speed:1000,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+
+  });
+</script>
+
+
+<!--============== Aos icons js ================ -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    duration: 1500,
+
+  });
+</script>
+
+
+<!--============== our product crasoul js ================ -->
+<!-- Swiper JS cdn-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".pk", {
+    spaceBetween: 30,
+    loop: false,
+    speed:1000,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false
+      },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+
+      },
+      768: {
+        slidesPerView: 2,
+
+      },
+      1024: {
+        slidesPerView: 3,
+
+      },
+      1200: {
+        slidesPerView: 4,
+
+      },
+    },
+  });
+</script>
+
+
+<!--============== our satisfied customer crasoul js ================ -->
+<!-- Swiper JS cdn-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".rk", {
+    spaceBetween: 30,
+    loop: false,
+    speed:1000,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false
+      },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+
+      },
+      768: {
+        slidesPerView: 2,
+
+      },
+      1024: {
+        slidesPerView: 3,
+
+      },
+      1200: {
+        slidesPerView: 3,
+
+      },
+    },
+  });
+</script>
+
+
+</html>
